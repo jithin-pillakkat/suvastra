@@ -26,7 +26,7 @@
   --default-color: #3d4348;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #3e5055;
+  --heading-color: #fff;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
   --accent-color: #388da8;
@@ -38,7 +38,7 @@
 /* Nav Menu Colors */
 :root {
   /* Nav Color - This is the default color of the main navmenu links. */
-  --nav-color: #313336;
+  --nav-color: #fff;
 
   /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
   --nav-hover-color: #77b6ca;
@@ -171,7 +171,7 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #ffffff;
+  --background-color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -817,14 +817,14 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding-bottom: 20px;
   position: relative;
 }
@@ -853,7 +853,7 @@ section,
   width: 100%;
   min-height: 70vh;
   position: relative;
-  padding: 180px 0 40px 0;
+  padding: 0px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -894,7 +894,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #ffffff;
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -1008,7 +1008,7 @@ section,
 }
 
 .featured-services .service-item .title a {
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .featured-services .service-item .title a:hover {
@@ -1151,7 +1151,7 @@ section,
 .features .nav-link {
   color: var(--heading-color);
   border: 0;
-  padding: 30px;
+  padding: 15px;
   transition: 0.3s;
   border-radius: 10px;
   display: flex;
@@ -1178,11 +1178,13 @@ section,
   font-weight: 600;
   margin: 0 0 10px 0;
   transition: 0.3s;
+  color: #388da8;
 }
 
 .features .nav-link p {
   font-size: 15px;
   margin: 0;
+  color: black;
 }
 
 .features .nav-link:hover {
@@ -1190,7 +1192,7 @@ section,
 }
 
 .features .nav-link.active {
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .features .tab-pane img {
@@ -1990,6 +1992,122 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.carousel-caption {
+  position: absolute;
+  right: 7%;
+  bottom: 1.25rem;
+  left: 7%;
+  padding-top: 1.25rem;
+  padding-bottom: 18.25rem;
+  color: #fff;
+  text-align: left;
+}
+
+
+.trignle_menu {
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  height: auto;
+}
+
+.diamond_shapes {
+  background: url(../img/menu-triangle-.png);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid transparent;
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  transition: all 0.5s ease;
+  top: 114px;
+  right: 281px;
+  height: 192px;
+  width: 130px;
+}
+
+
+.diamond_shapes2 {
+  background: url(../img/menu-triangle-.png);
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: 21px;
+  right: 352px;
+  transition: all 0.5s ease;
+  height: 92px;
+  width: 130px;
+}
+
+.diamond_shapes3 {
+  background: url(../img/menu-triangle-.png);
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: -71px;
+  transition: all 0.5s ease;
+  right: 285px;
+  height: 92px;
+  width: 130px;
+}
+
+.diamond_shapes4 {
+  background: url(../img/menu-triangle-.png);
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: 114px;
+  right: 416px;
+  transition: all 0.5s ease;
+  height: 92px;
+  width: 130px;
+}
+
+.diamond_shapes5 {
+  background: url(../img/menu-triangle-.png);
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: 21px;
+  right: 221px;
+  transition: all 0.5s ease;
+  height: 92px;
+  width: 130px;
+}
+.diamond_shapes6 {
+  background: url(../img/menu-triangle-.png);
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: 113px;
+  right: 154px;
+  transition: all 0.5s ease;
+  height: 92px;
+  width: 130px;
+}
+
+.diamond_shapes7 {
+  /* background: url(../img/menu-triangle-.png); */
+  margin: 3px 0 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: 25px;
+  right: 245px;
+  transition: all 0.5s ease;
+  height: 92px;
+  width: 130px;
+}
+
+.product-img{
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
 }
